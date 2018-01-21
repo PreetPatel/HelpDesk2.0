@@ -1,0 +1,45 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Login.master.vb" Inherits="HelpDesk2._0.Login1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Punjas IT Help Desk</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div>
+        <table aria-orientation="vertical" role="banner" style ="width:100%">
+            <tr>
+                <td class="auto-style1">
+
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Punjas Logo.jpg" Width="220px" />
+
+                </td>
+                <td style="width:75%">
+                    <h1 style="color:GrayText" >Help Desk 2.0</h1>
+                </td>
+            </tr>
+        </table>
+     </div>
+
+    <div>
+        <nav>
+            <a href="About.aspx">Logout</a>
+        </nav>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
