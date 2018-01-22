@@ -14,6 +14,7 @@
                 <td style="width:10%">
 
                     <asp:DropDownList ID="ddlStatus" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlStatus_SelectedIndexChanged"> 
+                   
                     </asp:DropDownList>
 
                 </td>
@@ -24,7 +25,7 @@
                 </td>
                 <td style="width:10%">
 
-                    <asp:DropDownList ID="ddlPriority" runat="server">
+                    <asp:DropDownList ID="ddlPriority" runat="server" AutoPostBack="True">
                     </asp:DropDownList>
 
                 </td>
@@ -35,7 +36,7 @@
                 </td>
                 <td style="width:10%">
 
-                    <asp:DropDownList ID="ddlIssued2" runat="server">
+                    <asp:DropDownList ID="ddlIssued2" runat="server" AutoPostBack="True" style="height: 22px">
                     </asp:DropDownList>
 
                 </td>
