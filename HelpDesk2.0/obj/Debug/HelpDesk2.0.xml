@@ -6,78 +6,31 @@ HelpDesk2.0
 </name>
 </assembly>
 <members>
-<member name="F:HelpDesk2._0.OpenAuthProviders.providerDetails">
+<member name="P:HelpDesk2._0.My.MyWebExtension.Computer">
 	<summary>
-providerDetails control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.SiteMaster.HeadContent">
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:HelpDesk2._0.My.MyWebExtension.User">
 	<summary>
-HeadContent control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.SiteMaster.FeaturedContent">
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:HelpDesk2._0.My.MyWebExtension.Request">
 	<summary>
-FeaturedContent control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.SiteMaster.MainContent">
+ Returns Request object.
+ </summary>
+</member><member name="P:HelpDesk2._0.My.MyWebExtension.Response">
 	<summary>
-MainContent control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Login.RegisterHyperLink">
+ Returns Response object.
+ </summary>
+</member><member name="P:HelpDesk2._0.My.MyWebExtension.Log">
 	<summary>
-RegisterHyperLink control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Login.OpenAuthLogin">
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:HelpDesk2._0.My.MyWebExtension">
 	<summary>
-OpenAuthLogin control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Activity.lblActivity">
-	<summary>
-lblActivity control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Activity.txtActivity">
-	<summary>
-txtActivity control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Activity.btnActivity">
-	<summary>
-btnActivity control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
 </member><member name="F:HelpDesk2._0.IssueList.Label1">
 	<summary>
 Label1 control.
@@ -126,57 +79,25 @@ ddlIssued2 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:HelpDesk2._0.IssueList.GridView1">
+</member><member name="F:HelpDesk2._0.IssueList.gvIssueList">
 	<summary>
-GridView1 control.
+gvIssueList control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:HelpDesk2._0.IssueList.SqlDataSourceTest">
+</member><member name="F:HelpDesk2._0.Login.RegisterHyperLink">
 	<summary>
-SqlDataSourceTest control.
+RegisterHyperLink control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:HelpDesk2._0.Login1.Head1">
+</member><member name="F:HelpDesk2._0.Login.OpenAuthLogin">
 	<summary>
-Head1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Login1.head">
-	<summary>
-head control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Login1.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Login1.Image1">
-	<summary>
-Image1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:HelpDesk2._0.Login1.ContentPlaceHolder1">
-	<summary>
-ContentPlaceHolder1 control.
+OpenAuthLogin control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -230,17 +151,81 @@ ContentPlaceHolder1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:HelpDesk2._0.RegisterExternalLogin.userNameForm">
+</member><member name="F:HelpDesk2._0.LoginPage.lblusername">
 	<summary>
-userNameForm control.
+lblusername control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:HelpDesk2._0.RegisterExternalLogin.userName">
+</member><member name="F:HelpDesk2._0.LoginPage.txtUsername">
 	<summary>
-userName control.
+txtUsername control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.LoginPage.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.LoginPage.lblPass">
+	<summary>
+lblPass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.LoginPage.txtpass">
+	<summary>
+txtpass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.LoginPage.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.LoginPage.btnLog">
+	<summary>
+btnLog control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.SiteMaster.HeadContent">
+	<summary>
+HeadContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.SiteMaster.FeaturedContent">
+	<summary>
+FeaturedContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.SiteMaster.MainContent">
+	<summary>
+MainContent control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -286,31 +271,246 @@ changePassword control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="P:HelpDesk2._0.My.MyWebExtension.Computer">
+</member><member name="F:HelpDesk2._0.Login1.Head1">
 	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:HelpDesk2._0.My.MyWebExtension.User">
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Login1.head">
 	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:HelpDesk2._0.My.MyWebExtension.Request">
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Login1.form1">
 	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:HelpDesk2._0.My.MyWebExtension.Response">
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Login1.Image1">
 	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:HelpDesk2._0.My.MyWebExtension.Log">
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Login1.ContentPlaceHolder1">
 	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:HelpDesk2._0.My.MyWebExtension">
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.OpenAuthProviders.providerDetails">
 	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
+providerDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.RegisterExternalLogin.userNameForm">
+	<summary>
+userNameForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.RegisterExternalLogin.userName">
+	<summary>
+userName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblcaseID">
+	<summary>
+lblcaseID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblcaseID1">
+	<summary>
+lblcaseID1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblSubject">
+	<summary>
+lblSubject control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblSubject1">
+	<summary>
+lblSubject1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblCategory">
+	<summary>
+lblCategory control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.ddlCategory">
+	<summary>
+ddlCategory control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblStatus">
+	<summary>
+lblStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.ddlStatus">
+	<summary>
+ddlStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblIssuedTo">
+	<summary>
+lblIssuedTo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.ddlIssuedTo">
+	<summary>
+ddlIssuedTo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblTargetDate">
+	<summary>
+lblTargetDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblDueDate">
+	<summary>
+lblDueDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.btnUpdateDate">
+	<summary>
+btnUpdateDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.clddate">
+	<summary>
+clddate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblLocation">
+	<summary>
+lblLocation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.txtLocation">
+	<summary>
+txtLocation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblPriority">
+	<summary>
+lblPriority control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.ddlPriority">
+	<summary>
+ddlPriority control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.lblDescription">
+	<summary>
+lblDescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.txtDescription">
+	<summary>
+txtDescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.btnUpdate">
+	<summary>
+btnUpdate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HelpDesk2._0.Activity.gvActivity">
+	<summary>
+gvActivity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member>
 </members>
 </doc>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Users/HelpDesk.Master" CodeBehind="IssueList.aspx.vb" Inherits="HelpDesk2._0.IssueList" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Users/HelpDesk.Master" CodeBehind="IssueList.aspx.vb" Inherits="HelpDesk2._0.IssueList" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
    
 </asp:Content>
@@ -14,7 +14,6 @@
                 <td style="width:10%">
 
                     <asp:DropDownList ID="ddlStatus" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlStatus_SelectedIndexChanged"> 
-                   
                     </asp:DropDownList>
 
                 </td>
@@ -25,7 +24,7 @@
                 </td>
                 <td style="width:10%">
 
-                    <asp:DropDownList ID="ddlPriority" runat="server" AutoPostBack="True">
+                    <asp:DropDownList ID="ddlPriority" runat="server">
                     </asp:DropDownList>
 
                 </td>
@@ -36,7 +35,7 @@
                 </td>
                 <td style="width:10%">
 
-                    <asp:DropDownList ID="ddlIssued2" runat="server" AutoPostBack="True" style="height: 22px">
+                    <asp:DropDownList ID="ddlIssued2" runat="server">
                     </asp:DropDownList>
 
                 </td>
@@ -46,7 +45,7 @@
         
     </section>
     <div>
-        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" HorizontalAlign="Right" AllowPaging="True" AllowSorting="True">
+        <asp:GridView ID="gvIssueList" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" HorizontalAlign="Right" AllowPaging="True" AllowSorting="True" EnableSortingAndPagingCallbacks="True" >
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -60,5 +59,4 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
     </div>
-<asp:SqlDataSource ID="SqlDataSourceTest" runat="server" ConnectionString="<%$ ConnectionStrings:TrainingConnectionString %>" SelectCommand="SELECT * FROM [Requests]"></asp:SqlDataSource>
 </asp:Content>

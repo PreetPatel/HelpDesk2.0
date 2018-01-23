@@ -222,6 +222,7 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Images\Punjas Logo.jpg" />
+    <Content Include="LoginPage.aspx" />
     <Content Include="packages.config" />
     <Content Include="Login.Master" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
@@ -329,6 +330,13 @@
     <Compile Include="Login.Master.vb">
       <DependentUpon>Login.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.vb">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.vb">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

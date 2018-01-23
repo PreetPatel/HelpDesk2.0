@@ -43,7 +43,7 @@ Module Module1
         Dim where As String = ""
         Dim done As Boolean = False
 
-        If Not status = "" Or Not priority = "" Or issuedTo = "" Then
+        If Not status = "" Or Not priority = "" Or Not issuedTo = "" Then
             where = "Where "
         End If
 
@@ -66,10 +66,12 @@ Module Module1
         End If
         Dim final As String = where + statusMessage + priorityMessage + issuedToMessage
         final.TrimEnd()
-        If final.Substring(final.Length - 5) = "Where " Then
-            final = final.Remove(final.Length - 6)
+        If final.Length > 6 Then
+            If final.Substring(final.Length - 5) = "Where " Then
+                final = final.Remove(final.Length - 6)
+            End If
         End If
-        MsgBox(final.Substring(5))
+
         Return final
     End Function
 

@@ -11,68 +11,68 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class IssueList
+Partial Public Class LoginPage
 
     '''<summary>
-    '''Label1 control.
+    '''lblusername control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblusername As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''ddlStatus control.
+    '''txtUsername control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlStatus As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents txtUsername As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label2 control.
+    '''RequiredFieldValidator1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents RequiredFieldValidator1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''ddlPriority control.
+    '''lblPass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlPriority As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents lblPass As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Label3 control.
+    '''txtpass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents txtpass As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''ddlIssued2 control.
+    '''RequiredFieldValidator2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlIssued2 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents RequiredFieldValidator2 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''gvIssueList control.
+    '''btnLog control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents gvIssueList As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents btnLog As Global.System.Web.UI.WebControls.Button
 End Class

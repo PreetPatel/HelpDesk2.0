@@ -49,8 +49,8 @@ Public Class IssueList
             ddlIssued2.Items.Insert(0, New ListItem("All", ""))
 
             Dim dtlist As DataTable = GetData()
-            GridView1.DataSource = dtlist
-            GridView1.DataBind()
+            gvIssueList.DataSource = dtlist
+            gvIssueList.DataBind()
 
         End If
 
@@ -68,11 +68,11 @@ Public Class IssueList
         Dim dt As New DataTable
         final = ConcatenateRequest(Session("Status"), Session("Priority"), Session("IssuedTo"))
         Select_from_DB("Select * from dbo.Requests " + final, dt)
-        GridView1.DataSource = dt
-        GridView1.DataBind()
+        gvIssueList.DataSource = dt
+        gvIssueList.DataBind()
     End Sub
 
-   
+
     Protected Sub ddlPriority_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlPriority.SelectedIndexChanged
         priority = ddlPriority.SelectedItem.Value
         Session("Priority") = priority
@@ -82,21 +82,34 @@ Public Class IssueList
         final = ConcatenateRequest(Session("Status"), Session("Priority"), Session("IssuedTo"))
         Select_from_DB("Select * from dbo.Requests " + final, dt)
 
-        GridView1.DataSource = dt
-        GridView1.DataBind()
+        gvIssueList.DataSource = dt
+        gvIssueList.DataBind()
     End Sub
 
-  
+
     Protected Sub ddlIssued2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlIssued2.SelectedIndexChanged
         issuedTo = ddlIssued2.SelectedItem.Value
         Session("IssuedTo") = issuedTo
         ' GridView1.DataSource = dt
         Dim dt As New DataTable
         final = ConcatenateRequest(Session("Status"), Session("Priority"), Session("IssuedTo"))
-        MsgBox(final)
+
         Select_from_DB("Select * from dbo.Requests " + final, dt)
 
-        GridView1.DataSource = dt
-        GridView1.DataBind()
+        gvIssueList.DataSource = dt
+        gvIssueList.DataBind()
+    End Sub
+
+    Private Sub gvIssueList_RowDataBound(sender As Object, e As GridViewRowEventArgs) Handles gvIssueList.RowDataBound
+        If e.Row.RowType = DataControlRowType.DataRow Then
+            e.Row.Attributes("onclick") = Page.ClientScript.GetPostBackClientHyperlink(gvIssueList, "Select$" & e.Row.RowIndex)
+            e.Row.Attributes("style") = "cursor:pointer"
+        End If
+    End Sub
+
+   
+    Protected Sub gvIssueList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gvIssueList.SelectedIndexChanged
+        Dim id As String = gvIssueList.SelectedRow.Cells(0).Text.ToString
+        Response.Redirect("~/Users/Activity.aspx?Id=" + id)
     End Sub
 End Class
